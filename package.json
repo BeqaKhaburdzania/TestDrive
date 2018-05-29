@@ -1,0 +1,42 @@
+{
+  "name": "spotcoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec \"babel-node ./ --presets es2015,stage-0\"",
+    "test": "ava test/**/*.spec.js --verbose",
+    "test:comp": "ava test/component/**/*.spec.js --verbose",
+    "test:unit": "ava test/unit/**/*.spec.js --verbose"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "ava": "1.0.0-beta.4",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "nodemon": "^1.17.5",
+    "sinon": "^5.0.10",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "@cityofzion/neon-js": "github:cityofzion/neon-js",
+    "express": "^4.16.3"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ]
+  }
+}
