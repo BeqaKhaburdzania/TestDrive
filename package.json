@@ -22,6 +22,7 @@
     "nodemon": "^1.17.5",
     "sinon": "^5.0.10",
     "supertest": "^3.1.0"
+    
   },
   "dependencies": {
     "@cityofzion/neon-js": "github:cityofzion/neon-js",
